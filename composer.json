@@ -1,0 +1,26 @@
+{
+    "name": "dov/miles",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Miles\\": "./",
+            "Auth\\": "../auth/",
+            "Repo\\": "../repo/",
+            "Analytics\\": "../analytics/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleksii Danyshevskyi",
+            "email": "danishevskij@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "mikecao/flight": "^2.0",
+        "twig/twig": "^3.5",
+        "foroco/php-browser-detection": "^2.7",
+        "illuminate/database": "^10.46",
+        "kudashevs/accept-language": "^3.4"
+    }
+}

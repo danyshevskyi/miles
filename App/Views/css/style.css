@@ -1,0 +1,524 @@
+html, body {
+  background-image: url(../img/car.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
+}
+
+.container {
+    _border: 1px solid red;
+    owerflow: hidden;
+}
+
+
+.centered2 {
+    _position: fixed; /* or absolute */
+    _top: 35%;
+    _left: 50%;
+    width: 350px;
+    height: 75px;
+    _margin: -55px 0 0 -150px;
+}
+
+.auth_text {
+    margin-top: 6px;
+    color: yellow;
+    float: right;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.my_btn {
+    float: left;
+    width: 80px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+}
+
+.text_details {
+    color: white;
+}
+
+.form-check {
+    margin-top: 18px;
+    font-size: 18px;
+}
+
+.btn {
+    font-size: 20px;
+}
+
+
+.or {
+    color: white;
+    border: 0px solid white;
+    text-align: center;
+    margin: 0 auto;
+    width:  350px;
+}
+
+.table {
+    text-align: center;
+}
+
+.my_button_right {
+    margin-bottom: 17px;
+    
+
+}   
+
+._myAlignLeft {
+    margin: 0 auto 0 0;
+}
+
+#alertPaid, #alertPaid2, #alertCheckToday, #alertCheckYest {
+    color: red;
+}
+
+#alertCheckDate {
+    color: red;
+    _border: 1px solid red;
+    text-align: center;
+    _padding-bottom: 15px;
+}
+
+#check_today, #check_yest {
+    display: none;
+
+}
+
+.textReg {
+    border: 1px solid grey;
+    _border-radius: 0px 100px / 120px;
+    border-radius: 30px;
+    padding: 10px 10px;
+    color: #5c5b5b;
+}
+
+
+
+/* modal form calculation */
+/*.calcMain {
+    border: 1px solid lightgrey;
+    display: flex;
+    _margin-bottom: 30px;
+    height: 60px;   
+}*/
+
+.marginTop30 {
+    margin-top: 30px;   
+}
+
+.calcMain2 {
+    display: flex;
+    height: 50px;
+}
+
+/*.calcOne {
+    width: 60%;  
+}*/
+
+/*.calcTwo {
+    width: 40%;
+    _border: 1px solid blue;
+}
+*/
+
+.calcTwo2 {
+    width: 40%;
+    _border: 1px solid blue;
+    padding-top: 10px;
+}
+
+
+.calcPaid {
+    border: 1px solid lightgrey;
+    _margin-bottom: 30px;
+}
+
+/*.text-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+
+/* /modal form calculation */
+
+
+
+
+td {
+    vertical-align: middle;
+
+}
+
+
+
+.butAdd {
+    _margin-left: 13px;
+    border: 1px solid lightgrey;
+    width: 58px;
+    height: 58px;
+    text-align: center;
+    font-size: 34px;
+    padding-button: 2px;
+    background-color: #edffee;
+}
+
+
+
+
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+    _border: 1px solid red;
+    flex-grow: 1;
+}
+
+
+#contacts {
+    margin: 2px auto 10px auto;
+    _border: 1px solid red;
+    font-size: 18px;
+    max-width: 450px;
+    text-decoration: none;
+
+
+}
+
+#contacts div {
+    padding: 6px 0;
+}
+
+#contacts a {
+    color: #0d6efd;
+    _color: black;
+    text-decoration: none;
+}
+
+#reg_succ {
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center; 
+    _border: 1px solid red;   
+}
+
+ul {
+    _border: 1px solid red;
+    margin-bottom: 5px;
+
+}
+
+#text_contact {
+    text-align: justify;
+}
+
+
+.mess_reg {
+    color: #0065ff;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#pen_small {
+    font-size: 20px;
+    color: black;
+    _border: 1px solid lightgrey;
+    _padding: 0px 5px;
+
+}
+
+#pen_small_new {
+    font-size: 30px;
+    _color: black;
+}
+
+
+
+.header {
+  margin-top: 20px;
+  _height: 60px;
+  _border: 1px solid red;
+  _position: absolute;
+  _margin: 20px 5px 0px 5px;
+  padding: 0 3px 0 3px;
+}
+
+.logo {
+    _border: 1px solid red;
+    _color: white;
+    _margin: 20px auto 30px auto;
+    width: 120px;
+    text-align: center;
+    _margin-left: 5px;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+#logo_url {
+    _border: 1px solid red;
+    text-align: center;
+    _padding-right: 2px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#menu {
+    _border: 1px solid red;
+    width: 98px;
+    _margin-right: 5px;
+}
+
+#menu_button {
+    background: none;
+    color: white;
+}
+
+
+/* modal_entry.php */
+
+.my_tab {
+    _border: 1px solid red;
+    padding-top: 15px;
+    margin-bottom: 8px;
+}
+
+.but_tab_close {
+    _border: 1px solid red;
+    margin: 2px 18px 0 auto;
+    font-size: 10px;
+}
+
+.my_tab button {
+    font-size: 18px;
+}
+
+#nav-home-tab {
+    width: 110px;
+}
+
+.note_entry {
+    _width: 300px;
+    _border: 1px solid red;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.but_width_ent {
+    width: 110px;
+}
+
+/* history_form_not.php */
+
+.myTab {
+    margin-bottom: 10px;
+}
+
+.note {
+    _border: 1px solid red;
+    _margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.noteNew {
+    _border: 1px solid red;
+    _margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 25px 0;
+}
+
+#link_about {
+    border: 1px grey solid;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.alertModEntry {
+    color: red;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*.inpCommMile {
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    border: 0px;
+    font-style: italic;
+    height: 45px;
+}*/
+
+.rowComment {
+    font-style: italic;
+}
+
+
+
+/* block content */
+#block_buttons {
+    margin-top: 70px;
+}
+
+.my_button {
+    text-align: center;
+    _border: 1px solid red;
+    margin-bottom: 40px;
+    }
+
+.but-size {
+    min-width: 350px;
+    height: 60px;
+    border-radius: 30px;
+}
+/* /block content */
+
+
+
+/* block content not auth*/
+
+#logo_notauth {
+    _border: 1px solid red;
+    _margin-bottom: 100px;
+    width: 190px;
+    text-align: center;
+    _size: 30px;
+    _height: 300px;
+}
+
+#logo_url_notauth {
+    _border: 1px solid red;
+    text-align: center;
+    _padding-right: 2px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/*#height_300 {
+    height: 180px;
+}*/
+
+#but_notauth {
+    text-align: center;
+    _border: 1px solid red;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* /block content not auth*/
+
+
+
+/* block footer */
+#footer {
+    _border: 1px solid white;
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#footer_button {
+    background-color: Transparent;
+    color: white;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+#review_but {
+    width: 350px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+/* /block footer */
+
+
+/* block about  */
+#modal_footer {
+   margin: 10px 0; 
+}
+
+.contact_footer {
+    _border: 1px solid red;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.contact_footer a {
+    text-decoration: none;
+}
+hr {
+    margin: 0px 0px;
+}
+/* /block about  */
+
+
+
+
+
+
+
+
+
+
+/* modCostsAdd */
+
+
+
+.bb {
+    border: 1px solid blue;
+    _background-color: violet;
+    _width: 100%;
+}
+
+
+
+
+
+
+#selCosts {
+    height: 50px;
+}
+
+#selCostsUpd {
+    height: 50px;
+}
+
+/*.inpCommCosts {
+    _margin-top: 10px;
+    _background-color: #f9f9f9;
+    _border: 0px;
+    font-style: italic;
+    height: 50px;
+}*/
+
+/* /modCostsAdd */
+
+.fs-18 {
+    font-size: 18px;  
+}
