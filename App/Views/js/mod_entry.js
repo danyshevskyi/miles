@@ -86,7 +86,7 @@ async function butReg(project) {
                             };
 
         let response = await fetch (
-                        'https://dov.pp.ua/auth/',
+                        'https://auth.dov.pp.ua',
                         {
                             method: 'POST',  
                             headers:
@@ -103,7 +103,7 @@ async function butReg(project) {
 
         if(result['status']) {
             
-            location.replace('https://dov.pp.ua/' + project);
+            location.replace('https://'+ project +'.dov.pp.ua/');
 
         } else {
             wrongLogin.html('Вибачте, але такий Email вже зареєстрований. Оберіть інший.');

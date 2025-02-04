@@ -12,11 +12,11 @@ public $project = 'miles';
 
 public function main() {
 
-		// $objModelAuth = new Auth();
-		// 	$check = $objModelAuth->check();
+		$objModelAuth = new Auth();
+			$check = $objModelAuth->check();
 		
-			// if($check)
-			if(false)
+			if($check)
+			// if(false)
 			{
 				// Check tables exist
 				if($_SESSION['user'][$this->project] == 0)
