@@ -20,9 +20,6 @@ function pressReg() {
         getButEntryCont.classList.remove("active", "show");
 }
 
-
-
-
 async function butAuth(project) {
     
     let email = $('#authInputLogin').val();
@@ -37,7 +34,7 @@ async function butAuth(project) {
                     };              
 
     let response = await fetch (
-                    'https://dov.pp.ua/auth/',
+                    'https://auth.dov.pp.ua',
                     {
                         method: 'POST',  
                         headers:
@@ -95,9 +92,10 @@ async function butReg(project) {
                                     },
                             body: JSON.stringify(dataUser)
                         }
-                    );  
-                    // .then(response => response.json())
-                    // .then(data => console.log(data));
+                    )  
+                    .then(response => response.json())  
+                    .then(data => console.log(data))   
+                    .catch(error => console.error("Fetch error:", error));
                    
         let result = await response.json();
 
