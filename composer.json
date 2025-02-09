@@ -4,7 +4,7 @@
     "autoload": {
         "psr-4": {
             "Miles\\": "./",
-            "Auth\\": "../auth.dov.pp.ua/",
+            "Auth\\": "../auth/",
             "Repo\\": "../repo/",
             "Analytics\\": "../analytics/"
         }

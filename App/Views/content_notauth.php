@@ -5,9 +5,9 @@
 <!-- <div class="header"> -->
 <div class="d-flex justify-content-center align-items-center py-4 1my-1" id="_height_300" _style="height: 150px;">
    <div id="logo_notauth">
-        <a href="https://miles.dov.pp.ua" class="text-decoration-none text-light">
-            <img src="/App/Views/img/ukraine.png">
-                <span id="logo_url_notauth">miles.dov.pp.ua</span>
+        <a href="https://dov.pp.ua/miles" class="text-decoration-none text-light">
+            <img src="/miles/app/views/img/ukraine.png">
+                <span id="logo_url_notauth">dov.pp.ua/miles</span>
                     <h3>Пробіг Авто</h3>
                         </a>
                             </div>
@@ -55,15 +55,15 @@
   <div class="carousel-inner mx-auto bb1" style="width: 332px;">
 
     <div class="carousel-item active" data-bs-interval="3000">
-      <img src="/App/Views/img/app_pages/app_01.png" class="d-block 1w-50" alt="...">
+      <img src="/miles/app/views/img/app_pages/app_01.png" class="d-block 1w-50" alt="...">
     </div>
     
     <div class="carousel-item" data-bs-interval="3000">
-      <img src="/App/Views/img/app_pages/app_02.png" class="d-block 1w-100" alt="...">
+      <img src="/miles/app/views/img/app_pages/app_02.png" class="d-block 1w-100" alt="...">
     </div>
     
     <div class="carousel-item" data-bs-interval="3000">
-      <img src="/App/Views/img/app_pages/app_03.png" class="d-block 1w-100" alt="...">
+      <img src="/miles/app/views/img/app_pages/app_03.png" class="d-block 1w-100" alt="...">
     </div>
   
   </div>

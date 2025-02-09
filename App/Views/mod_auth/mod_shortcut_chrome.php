@@ -23,23 +23,23 @@
 
 <div class="text-center">
 
-    <img src="/App/Views/img/shortcut_chrome_01.png">
+    <img src="/miles/app/views/img/shortcut_chrome_01.png">
         </div>
 
 
 <p class="text-center mt-3 mb-0">2. Оберіть "Додати на головний ек...".</p>
 <div class="text-center">
-    <img src="/App/Views/img/shortcut_chrome_02.png">
+    <img src="/miles/app/views/img/shortcut_chrome_02.png">
         </div>
 
 <p class="text-center mt-3 mb-0">3. Натисніть "Додати".</p>
     <div class="text-center">
-        <img src="/App/Views/img/shortcut_chrome_03.png">
+        <img src="/miles/app/views/img/shortcut_chrome_03.png">
             </div>
 
 <p class="text-center mt-3 mb-0">4. Готово!</p>
     <div class="text-center">
-        <img src="/App/Views/img/shortcut.png">
+        <img src="/miles/app/views/img/shortcut.png">
             </div>
 
 

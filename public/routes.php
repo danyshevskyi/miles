@@ -7,7 +7,7 @@ use Miles\App\Controllers\CostsController;
 use Auth\App\Models\Auth;
 
 
-Flight::route('GET /', function() {	
+Flight::route('GET /miles', function() {	
 	
 	// Analytics
 	// $objCount = new Count('miles', 'all');
@@ -18,7 +18,7 @@ Flight::route('GET /', function() {
 });
 
 
-Flight::route('POST /', function() {
+Flight::route('POST /miles', function() {
 	
 	// Analytics
 	// $objCount = new Count('miles', 'all');
@@ -31,11 +31,11 @@ Flight::route('POST /', function() {
 	$key = Flight::request()->data['key'];
 		$keyJSON = Flight::request()->data->keyJSON;
 
-	// $Auth = new Auth();
-	// 	$check = $Auth->check();
+	$Auth = new Auth();
+		$check = $Auth->check();
 			
-	// if($check)
-	if(true)
+	if($check)
+	// if(true)
 	{
 		if ($key == 'mileages')
 		{

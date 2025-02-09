@@ -3,15 +3,12 @@ let getButEntry = document.querySelector('#nav-home-tab');
         let getButEntryCont = document.querySelector('#nav-home');
             let getButRegCont = document.querySelector('#nav-profile');
 
-
-
 function pressLogin() {
     getButEntry.classList.add("active");
         getButEntryCont.classList.add("active", "show");
     getButReg.classList.remove("active");
         getButRegCont.classList.remove("active", "show");     
 }
-
 
 function pressReg() {
     getButReg.classList.add("active");
@@ -34,7 +31,7 @@ async function butAuth(project) {
                     };              
 
     let response = await fetch (
-                    'https://auth.dov.pp.ua',
+                    'https://dov.pp.ua/auth/',
                     {
                         method: 'POST',  
                         headers:
@@ -44,14 +41,14 @@ async function butAuth(project) {
                         body: JSON.stringify(dataUser)
                     }
                 );
-                // .then(response => response.json());
-                // .then(data => console.log(data));
-               
-                    let result = await response.json();
+    let result = await response.json();
 
-    if(result['status']) {
-        location.replace('https://dov.pp.ua/' + project);
-    } else {
+    if(result['status'])
+    {
+        location.replace('https://dov.pp.ua/' + project + '/');
+    }
+    else
+    {
         document.querySelector('#alertLogin').hidden = false;
             document.querySelector('#alertRegPass').value = null;
     }
@@ -83,7 +80,7 @@ async function butReg(project) {
                             };
 
         let response = await fetch (
-                        'https://auth.dov.pp.ua',
+                        'https://dov.pp.ua/auth/',
                         {
                             method: 'POST',  
                             headers:
@@ -92,23 +89,18 @@ async function butReg(project) {
                                     },
                             body: JSON.stringify(dataUser)
                         }
-                    )  
-                    .then(response => response.json())  
-                    .then(data => console.log(data))   
-                    .catch(error => console.error("Fetch error:", error));
-                   
+                    );
+
         let result = await response.json();
 
         if(result['status']) {
-            
-            location.replace('https://'+ project +'.dov.pp.ua/');
+            location.replace('https://dov.pp.ua/' + project + '/');
 
         } else {
             wrongLogin.html('Вибачте, але такий Email вже зареєстрований. Оберіть інший.');
                 wrongLogin.show();
                     wrongPass.hide();                       
         }
-
             } else {
                 wrongPass.html('Вибачте, але паролі не співпадають! Будь ласка, перевірте правільність вводу!');
                     wrongLogin.hide();
@@ -142,7 +134,7 @@ async function butEnd(project) {
             ).then(response => response.json());
     
                 if(result['status']) {
-                    location.replace('https://dov.pp.ua/'+ project);
+                    location.replace('https://dov.pp.ua/' + project + '/');
                 }
     }
 };
