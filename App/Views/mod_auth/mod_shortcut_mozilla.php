@@ -21,23 +21,23 @@
 <p class="text-center mt-3 mb-0">1. Натисніть на три крапки у нижньому правому куті.</p>
 <div class="text-center">
 
-    <img src="/miles/app/views/img/shortcut_firefox_01.png">
+    <img src="/miles/App/Views/img/shortcut_firefox_01.png">
         </div>
 
 
 <p class="text-center mt-3 mb-0">2. Оберіть "Додати на головний екран".</p>
 <div class="text-center">
-    <img src="/miles/app/views/img/shortcut_firefox_02.png">
+    <img src="/miles/App/Views/img/shortcut_firefox_02.png">
         </div>
 
 <p class="text-center mt-3 mb-0">3. Натисніть "Додати".</p>
     <div class="text-center">
-        <img src="/miles/app/views/img/shortcut_chrome_03.png">
+        <img src="/miles/App/Views/img/shortcut_chrome_03.png">
             </div>
 
 <p class="text-center mt-3 mb-0">4. Готово!</p>
     <div class="text-center">
-        <img src="/miles/app/views/img/shortcut.png">
+        <img src="/miles/App/Views/img/shortcut.png">
             </div>
 
 

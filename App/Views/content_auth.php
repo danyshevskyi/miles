@@ -20,7 +20,7 @@
 
 <div class="logo">
     <a href="https://dov.pp.ua/miles">
-        <img src="/miles/app/views/img/ukraine.png">
+        <img src="/miles/App/Views/img/ukraine.png">
             <span id="logo_url">dov.pp.ua/miles</span>
                 <h5>Пробіг Авто</h5>
                     </a>

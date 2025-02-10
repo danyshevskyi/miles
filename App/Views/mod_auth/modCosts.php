@@ -35,8 +35,8 @@
           <select class="form-select" id="yearCosts" name="year">
             <option value="2022">2022</option>
             <option value="2023">2023</option>
-            <option value="2024" selected>2024</option>
-            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2025" selected>2025</option>
             <option value="2026">2026</option>
           </select>
           <label for="yearCosts">Рік:</label>
@@ -77,7 +77,6 @@
             <select id="selFilterCosts" class="form-select form-select-sm" aria-label=".form-select-sm example" name="filter">
                   <option value="all">Всі витрати авто</option>
                   <option value="fuel">Заправка</option>
-                  <option value="service">Тех. обслуговування</option>
                   <option value="other">Інші витрати авто</option>
                   <option value="person">Особисті витрати</option>
             </select>
