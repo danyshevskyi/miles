@@ -3,15 +3,15 @@
 use Miles\App\Controllers\MilesController;
 use Miles\App\Controllers\CrudController;
 use Miles\App\Controllers\CostsController;
-// use Analytics\App\Models\Count;
+use Analytics\App\Models\Count;
 use Auth\App\Models\Auth;
 
 
 Flight::route('GET /miles', function() {	
 	
 	// Analytics
-	// $objCount = new Count('miles', 'all');
-	// 	$objCount->count();
+	$objCount = new Count('miles', 'all');
+		$objCount->count();
 	
 	$MilesController = new MilesController();
 		$MilesController->main();
@@ -21,8 +21,8 @@ Flight::route('GET /miles', function() {
 Flight::route('POST /miles', function() {
 	
 	// Analytics
-	// $objCount = new Count('miles', 'all');
-	// 	$objCount->count();
+	$objCount = new Count('miles', 'all');
+		$objCount->count();
 
 	$AuthController = new MilesController();
 		$CrudController = new CrudController();
