@@ -39,7 +39,7 @@ public function readCosts($year, $month, $filter) {
 		{
 			$result_pdo = $db->query("SELECT * FROM $this->table_db_costs
 				WHERE date_c LIKE '$yearMonth_db'
-				AND (id_costs != 5)
+				AND (id_costs != 4)
 				ORDER BY date_c ASC");
 		}
 		elseif ($filter == 'fuel')
@@ -49,25 +49,25 @@ public function readCosts($year, $month, $filter) {
 				AND (id_costs = 2)
 				ORDER BY date_c ASC");
 		}
-		elseif ($filter == 'service')
+		// elseif ($filter == 'service')
+		// {
+		// 	$result_pdo = $db->query("SELECT * FROM $this->table_db_costs
+		// 		WHERE date_c LIKE '$yearMonth_db'
+		// 		AND (id_costs = 3)
+		// 		ORDER BY date_c ASC");
+		// }
+		elseif ($filter == 'other')
 		{
 			$result_pdo = $db->query("SELECT * FROM $this->table_db_costs
 				WHERE date_c LIKE '$yearMonth_db'
 				AND (id_costs = 3)
 				ORDER BY date_c ASC");
 		}
-		elseif ($filter == 'other')
-		{
-			$result_pdo = $db->query("SELECT * FROM $this->table_db_costs
-				WHERE date_c LIKE '$yearMonth_db'
-				AND (id_costs = 4)
-				ORDER BY date_c ASC");
-		}
 		elseif ($filter == 'person')
 		{
 			$result_pdo = $db->query("SELECT * FROM $this->table_db_costs
 				WHERE date_c LIKE '$yearMonth_db'
-				AND (id_costs = 5)
+				AND (id_costs = 4)
 				ORDER BY date_c ASC");
 		}
 		
