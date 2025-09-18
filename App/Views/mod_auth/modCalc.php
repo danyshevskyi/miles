@@ -61,10 +61,9 @@
 
             <div class="col-auto" id="modalBody2">
                <!-- api content --> 
-                    </div>
+            </div>
 </div>
-
-            
+           
         </div>
     </div>
 </div>

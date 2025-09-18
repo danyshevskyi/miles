@@ -177,7 +177,7 @@ public function readCalc($year, $month) {
 			FROM $this->table_db_costs
 			WHERE date_c LIKE '$yearMonth_db'
 			AND (id_costs > 1)
-			AND (id_costs < 5)");
+			AND (id_costs < 4)");
 					$result_costs_sum = $query_costs_sum->fetch();
 		
 		$data['costs'] = $result_costs_sum['costs_sum'];
