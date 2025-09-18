@@ -105,26 +105,4 @@ Flight::route('POST /miles', function() {
 			$CostsController->costsUpd();
 		}
 	}
-
-	// if ($key == 'userauth')
-	// {
-	// 	$AuthController->auth();	
-	// }
-	// elseif ($key == 'end') 	
-	// {
-	// 	$AuthController->end();
-	// } 
-	// elseif ($key == 'reg')
-	// {
-	// 	$AuthController->reg();
-	// }
-	// elseif ($key == 'checkUserReg')
-	// {
-	// 	$AuthController->checkUserReg();
-	// }
-	// elseif ($key == 'checkUserAuth')
-	// {
-	// 	$AuthController->checkUserAuth();
-	// }
-
 });
