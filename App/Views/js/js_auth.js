@@ -2,7 +2,11 @@ async function showMileages(month) {
 
     if(month == 'currentMonth') {
         selectMonth('#monthSelect', 'currentMonth');
-            }
+
+        // selectMonth2('#inputDate', '#monthSelect');
+    } else {
+        selectMonth2('#inputDate', '#monthSelect');
+    }
 
     const myForm = new FormData (document.getElementById('monthForm'));
         let response = await fetch('https://dov.pp.ua/miles/',
@@ -24,13 +28,6 @@ async function showMileages(month) {
     // Get month and year from selected form
     let getMonthHis = document.querySelector('#monthSelect').value;
         let getYearHis  = document.querySelector('#yearSelect').value; 
-    
-    // if (getMonthHis < 10) {
-    //     getMonthHis = "0" + getMonthHis;
-    //     }
-
-
-       // console.log(getMonthHis);
 
 
     for (i = 0; i < getElemTr.length; i++) {
@@ -70,9 +67,7 @@ async function showMileages(month) {
         // - /get date for update form
 
     $('#modMileages').modal('show');
-};
-
-
+}
 
 async function showCalc(month) {
 
@@ -95,9 +90,7 @@ async function showCalc(month) {
             calcClickDepr();
 
         $('#modCalc').modal('show');
-};
-
-
+}
 
 function calcClickFuel() {
    let getFuel = document.getElementById('paidId');
@@ -146,8 +139,6 @@ function calcClickFuel() {
             $('#modCalcFuelAdd').modal('show');
     });
 }
-
-
 
 function calcClickDepr() {
     let getDepr = document.getElementById('deprID');
@@ -198,8 +189,6 @@ function calcClickDepr() {
     });
 }
 
-
-
 async function calcButAdd(key) {
     
     if(key == 'fuel')
@@ -230,8 +219,6 @@ async function calcButAdd(key) {
 
     }
 }
-
-
 
 async function calcButUpd(key) {
 
@@ -303,11 +290,8 @@ async function calcButDel(key) {
     }
 }
 
-
-
-// function data check for modal modAddMileages
 async function checkDate2() {
-
+// function data check for modal modAddMileages
     let getFormKey = document.getElementById('formKey');
             getFormKey.value = "addMileage_check";
 
@@ -348,28 +332,21 @@ async function checkDate2() {
     } else {
 
         }
-    // Event select date for modAddMileages
-        document.getElementById('inputDate').addEventListener('change', function() {
-            checkDate2();
-        });
-};
-
+}
 
 function butAddMileages() {
     document.getElementById('inputDate').value = dateToday;
-        checkDate2();
+        // checkDate2();
         $('#modMileages').modal('hide');
             $('#modAddMileages').modal('show');
-};
-
+}
 
 function alertExit() {
     if (confirm('Ви впевнені що бажаєте вийти?')) {
         // document.querySelector('#but_exit_alert').click();
         butEnd();
     }
-};
-
+}
 
 async function butSaveOrUpdMileages() {
     const getFormData = new FormData (document.getElementById('form_mileage_add'));
@@ -381,13 +358,11 @@ async function butSaveOrUpdMileages() {
             }
         );
     $('#modAddMileages').modal('hide');
-        showMileages('currentMonth');
-};
+        showMileages();
+}
 
-
-
-// button del modUpdMileages
 async function butDel() {
+// button del modUpdMileages
     document.getElementById('keyDelOrUpd').value = "del";
         let getElemDateInput = document.getElementById('dateUpd');
             let selectedDate = getElemDateInput.value;
@@ -404,11 +379,10 @@ async function butDel() {
     $('#modUpdMileages').modal('hide');
         showMileages();
     }
-};
+}
 
-
-// button upd modUpdMileages
 async function butUpd() {
+// button upd modUpdMileages
     document.getElementById('keyDelOrUpd').value = "upd";
         const getForm = new FormData(document.getElementById('formUpdMileages'));
             await fetch('https://dov.pp.ua/miles/',
@@ -420,7 +394,6 @@ async function butUpd() {
     $('#modUpdMileages').modal('hide');
         showMileages();
 };
-
 
 // get date 
 const objDate = new Date();    
@@ -438,23 +411,19 @@ const objDate = new Date();
         }
     let yearNow = objDate.getFullYear();
         let dateToday = yearNow + "-" + monthNow + "-" + dayNow;
-           // let dateYesterday = yearNow + "-" + monthNow + "-" + dayYest;
-// get date
 
-
-
-
-
-
-
+// Add events for form 
 let elmounthForm = document.getElementById('monthForm');
     elmounthForm.addEventListener('change', function(){
         showMileages();
-    });
-
-
+})
 
 let elmounthForm2 = document.getElementById('monthForm2');
         elmounthForm2.addEventListener('change', function(){
             showCalc();
-});
+})
+
+// modAddMileages
+document.getElementById('inputDate').addEventListener('change', function() {
+    checkDate2()
+})

@@ -26,7 +26,6 @@
                     </a>
 </div>
 
-
 <!-- Menu contant -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel"> 
     <div class="row mx-3 my-4">
@@ -43,7 +42,6 @@
   
   <div class="offcanvas-body">
 
-
 <div class="menu_button">
     <button type="button"
             class="btn btn-outline-secondary but-size"
@@ -51,9 +49,7 @@
             <i class="bi bi-speedometer2 fs-3 pe-2"></i>Мої пробіги
     </button>
 </div>
-
     <br>
-
     <div class="my_button2">
         <button type="button"
                 class="btn btn-outline-secondary but-size"
@@ -71,9 +67,7 @@
                 <i class="bi bi-file-spreadsheet pe-2"></i>Розрахунки
         </button>
     </div>
-
     <br><br>
-
     <div class="my_button2 text-center">
         <button type="button"
                 class="btn btn-link but-size text-decoration-none"
@@ -84,34 +78,24 @@
                 Додати на робочий стіл
         </button>
     </div>
-
     <br><br>
-
     <div class="my_button2">
         <form action="../miles" method="POST">
             <input type="hidden" name="key" value="end">
                 <button type="submit" id="but_exit_alert" hidden></button>
                     <button type="button" class="btn btn-secondary but-size" onclick="butEnd('miles')">Вихід</button>
                         </form>
-    </div>
-        
+    </div>   
         </div>
 </div>
-
-
 </div>
 {% endblock %}
-
-
-
 
 {% block content %}
 <div id="block_buttons">
     <div class="my_button">
         <button type="button"
                 class="btn btn-light but-size"
-                _data-bs-toggle="modal"
-                _data-bs-target="#modAddMileages"
                 onclick="butAddMileages()">
                     <i class="bi bi-speedometer2 fs-3"></i>&nbsp;&nbsp;Додати пробіг
         </button>
@@ -119,8 +103,6 @@
     <div class="my_button">
         <button type="button"
                 class="btn btn-light but-size"
-                _data-bs-toggle="modal"
-                _data-bs-target="#modCostsAdd"
                 onclick="butAddCosts()">
                     <i class="bi bi-cash-coin fs-3"></i>&nbsp;&nbsp;Додати витрати
         </button>

@@ -1,31 +1,22 @@
-async function getCosts(month) {
-
-        //     if(month == 'currentMonth') {
-        //     selectMonth('#monthCosts', 'currentMonth');
-        // }
-
+async function getCosts() {
     const myForm = new FormData (document.getElementById('monthForm_c'));
         let response = await fetch('https://dov.pp.ua/miles/',
             {
             method: 'POST',
             body: myForm
             }
-        );
+        )
     let content = await response.text();
         let myVar = document.getElementById('modalBody_c');
                 myVar.innerHTML = content;
-
-
     // Get elements from modCostsUpd
     let inpDateCosts = document.querySelector('#inpDateCostsUpd');
         let selCostsUpd = document.querySelector('#selCostsUpd');
             let inpAmountCosts = document.querySelector('#inpAmountCostsUpd');
                 let inpCommCosts = document.querySelector('#inpCommCostsUpd');
                     let inpIdCosts = document.querySelector('#inpIdCosts');
-
     // Get data from modCosts for modCostsUpd
     let costsBlock = document.querySelectorAll('.costsBlock');
-
     // Event for div costs
     for(let i = 0; i < costsBlock.length; i++){
         costsBlock[i].addEventListener('click', function(){ 
@@ -38,33 +29,21 @@ async function getCosts(month) {
                                     $('#modCostsUpd').modal('show');
         })    
     }
-
-};
-
+}
 
 function modCosts(option){
     if(option == 'show'){
-        selectMonth('#monthCosts', 'currentMonth');
-            select('#selFilterCosts', 'all');
-                getCosts('currentMonth');
-                    $('#modCosts').modal('show');
-                        // Events for select filter
-                        let selFilterCosts = $('#selFilterCosts');
-                            selFilterCosts.on('change', function(){
-                                getCosts();
-                        });
-                        // Events for select month
-                        let elmounthForm_c = document.getElementById('monthCosts');
-                            elmounthForm_c.addEventListener('change', function(){
-                                getCosts();
-                        });     
+        selectMonth('#monthCosts', 'currentMonth')
+            getCosts()
+                $('#modCosts').modal('show') 
+    } else if(option == 'add'){
+        selectMonth2('#inputDate_c','#monthCosts')
+            getCosts()
+                $('#modCosts').modal('show') 
+    } else if(option == 'hide'){
+        $('#modCosts').modal('hide')
     }
-    else if(option == 'hide'){
-        $('#modCosts').modal('hide');
-    }
-};
-
-
+}
 
 async function selCosts(idTag, selected = 0) {
 
@@ -95,24 +74,20 @@ async function selCosts(idTag, selected = 0) {
             }
         }
     }
-};
-
-
+}
 
 function butAddCosts() {
-    document.getElementById('inputDate_c').value = dateToday;
-        selCosts('#selCosts');
+    document.getElementById('inputDate_c').value = dateToday
+        selCosts('#selCosts')
     
         // clear fields
-    document.querySelector('#inpPriceCosts').value = null;
-        document.querySelector('#inpCommCosts').value = null;
+    document.querySelector('#inpPriceCosts').value = null
+        document.querySelector('#inpCommCosts').value = null
 
         // show modal
-    $('#modCosts').modal('hide');
-        $('#modCostsAdd').modal('show');
-};
-
-
+    $('#modCosts').modal('hide')
+        $('#modCostsAdd').modal('show')
+}
 
 async function costsAdd() {
     const getFormData = new FormData (document.getElementById('form_costs_add'));
@@ -123,11 +98,9 @@ async function costsAdd() {
                 body: getFormData
             }
         );
-    $('#modCostsAdd').modal('hide');
-        modCosts('show');
-};
-
-
+    $('#modCostsAdd').modal('hide')
+        modCosts('add')
+}
 
 // button del modUpdCosts
 async function butDelCosts() {
@@ -142,12 +115,10 @@ async function butDelCosts() {
                 body: getForm
                 }    
             );
-    $('#modCostsUpd').modal('hide');
-        modCosts('show');
+    $('#modCostsUpd').modal('hide')
+        modCosts('show')
     }
-};
-
-
+}
 
 // button upd modUpdMileages
 async function butUpdCosts() {
@@ -159,6 +130,21 @@ async function butUpdCosts() {
             body: getForm
             }    
         );
-    $('#modCostsUpd').modal('hide');
-        modCosts('show');
-};
+    $('#modCostsUpd').modal('hide')
+        modCosts('show')
+}
+
+// Add event for modCostsAdd
+// Events for select filter
+let selFilterCosts = $('#selFilterCosts');
+    selFilterCosts.on('change', function(){
+        getCosts()
+})
+// Events for select month
+let elmounthForm_c = document.getElementById('monthCosts');
+    elmounthForm_c.addEventListener('change', function(){
+        getCosts()
+})
+
+// Filling select for costs
+select('#selFilterCosts', 'all')

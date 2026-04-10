@@ -33,11 +33,8 @@
     <div class="col-auto mx-2">
         <div class="form-floating">
           <select class="form-select" id="yearCosts" name="year">
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025" selected>2025</option>
-            <option value="2026">2026</option>
+            <option value="2025">2025</option>
+            <option value="2026" selected>2026</option>
           </select>
           <label for="yearCosts">Рік:</label>
         </div>
@@ -58,10 +55,7 @@
 
 </div>
 
-
 <hr>
-
-
 
 <div class="modal-body">
 
