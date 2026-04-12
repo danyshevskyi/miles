@@ -295,14 +295,14 @@ async function checkDate2() {
     let getFormKey = document.getElementById('formKey');
             getFormKey.value = "addMileage_check";
 
-    const formMyAdd = new FormData (document.getElementById('form_mileage_add'));
+    const formMyAdd = new FormData (document.getElementById('form_mileage_add'))
         let responseMy = await fetch(
             'https://dov.pp.ua/miles/',
             {
                 method: 'POST',
                 body: formMyAdd
             }
-        );
+        )
 
     let myMileage = await responseMy.text();
 
@@ -335,10 +335,10 @@ async function checkDate2() {
 }
 
 function butAddMileages() {
-    document.getElementById('inputDate').value = dateToday;
-        // checkDate2();
-        $('#modMileages').modal('hide');
-            $('#modAddMileages').modal('show');
+    document.getElementById('inputDate').value = dateToday
+        checkDate2()
+        $('#modMileages').modal('hide')
+            $('#modAddMileages').modal('show')
 }
 
 function alertExit() {
@@ -349,7 +349,7 @@ function alertExit() {
 }
 
 async function butSaveOrUpdMileages() {
-    const getFormData = new FormData (document.getElementById('form_mileage_add'));
+    const getFormData = new FormData (document.getElementById('form_mileage_add'))
         let request = await fetch(
             'https://dov.pp.ua/miles/',
             {
@@ -357,8 +357,8 @@ async function butSaveOrUpdMileages() {
                 body: getFormData
             }
         );
-    $('#modAddMileages').modal('hide');
-        showMileages();
+    $('#modAddMileages').modal('hide')
+        showMileages()
 }
 
 async function butDel() {

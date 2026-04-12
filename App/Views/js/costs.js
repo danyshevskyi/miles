@@ -80,11 +80,11 @@ function butAddCosts() {
     document.getElementById('inputDate_c').value = dateToday
         selCosts('#selCosts')
     
-        // clear fields
+    // clear fields
     document.querySelector('#inpPriceCosts').value = null
         document.querySelector('#inpCommCosts').value = null
 
-        // show modal
+    // show modal
     $('#modCosts').modal('hide')
         $('#modCostsAdd').modal('show')
 }
@@ -136,12 +136,12 @@ async function butUpdCosts() {
 
 // Add event for modCostsAdd
 // Events for select filter
-let selFilterCosts = $('#selFilterCosts');
+let selFilterCosts = $('#selFilterCosts')
     selFilterCosts.on('change', function(){
         getCosts()
 })
 // Events for select month
-let elmounthForm_c = document.getElementById('monthCosts');
+let elmounthForm_c = document.getElementById('monthCosts')
     elmounthForm_c.addEventListener('change', function(){
         getCosts()
 })

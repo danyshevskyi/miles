@@ -10,7 +10,7 @@
 
 
         <form method="POST" id="form_mileage_add">
-          <input type="hidden" name="key" value="addMileage_check" id="formKey">
+          <input type="hidden" name="key" value="" id="formKey">
           <div class="form-floating mb-3">
             <input type="date" class="form-control" id="inputDate" name="date_m" required>
             <label for="floatingInput">Виберіть дату</label>
