@@ -49,3 +49,19 @@ function selectMonth2(idGetMonth, idSetMonth) {
     }
   }
 }
+
+function selectValue(what, where) {
+  // what and where are id select elements
+      let whatValue = document.querySelector(what).value
+          let whereSelect = document.querySelector(where)
+      for (let i = 1; i < whereSelect.length; i++) {
+          if (whereSelect[i].value == whatValue) {
+              whereSelect[i].selected = true
+          }
+      }
+}
+  
+  function selectDefault(selectId) {
+      let select = document.querySelector(selectId)
+      select[0].selected = true
+}
