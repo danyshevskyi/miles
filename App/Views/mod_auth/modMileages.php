@@ -2,8 +2,6 @@
     <div class="modal-dialog">
         <div class="modal-content">
 
-
-
 <div class="row mt-3 pb-3 mx-2">
 
 <form id="monthForm" class="row g-0">
@@ -29,14 +27,16 @@
     </div>
 </div>
 
-
-
 <div class="col-auto mx-2">
     <div class="form-floating">
             <select class="form-select" id="yearSelect" aria-label="Default select example" name="year">
               <option value="2024">2024</option>
               <option value="2025">2025</option>
-              <option value="2026" selected>2026</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
             </select>
         <label for="yearSelect">Рік:</label>
     </div>

@@ -15,6 +15,7 @@ function selectMonth(monthSelect, month) {
       getMonthSelect[i].selected = true;
     }
   }
+  selectYearNow('#yearSelect')
 }
 
 function select(selectId, value) {
@@ -50,6 +51,19 @@ function selectMonth2(idGetMonth, idSetMonth) {
   }
 }
 
+function selectYear2(whatIdInput, whereIdSelect) {
+  let what = document.querySelector(whatIdInput);
+    let where = document.querySelector(whereIdSelect);
+  for (let i = 0; i < where.length; i++) {
+    if(where[i].value == what.value.split('-')[0]) {
+      where[i].selected = true
+    }
+  }
+
+
+
+}
+
 function selectValue(what, where) {
   // what and where are id select elements
       let whatValue = document.querySelector(what).value
@@ -61,7 +75,17 @@ function selectValue(what, where) {
       }
 }
   
-  function selectDefault(selectId) {
+function selectDefault(selectId) {
       let select = document.querySelector(selectId)
       select[0].selected = true
+}
+
+function selectYearNow(selectWhere) {
+  const date = new Date()
+  let getSelector = document.querySelector(selectWhere)
+    for(let i = 0; i < getSelector.length; i++) {
+      if(getSelector[i].value == date.getFullYear()) {
+        getSelector[i].selected = true
+      }
+    } 
 }

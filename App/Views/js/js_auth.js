@@ -4,7 +4,8 @@ async function showMileages(month) {
 
     // selectMonth2('#inputDate', '#monthSelect');
   } else {
-    selectMonth2("#inputDate", "#monthSelect");
+    selectMonth2("#inputDate", "#monthSelect")
+    selectYear2('#inputDate', '#yearSelect')
   }
 
   const myForm = new FormData(document.getElementById("monthForm"));
